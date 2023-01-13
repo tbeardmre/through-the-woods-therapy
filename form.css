@@ -1,4 +1,280 @@
-.main {
+/* Global */
+
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
   background-color: #131713;
-  height: 100vh;
+}
+
+/* Naviagtion */
+
+#top-page {
+  background-image: url('bannerimg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: none;
+  margin: 0;
+}
+
+.navbar .nav-links {
+  display: flex;
+  padding-right: 70px;
+}
+
+.nav-links a {
+  padding-left: 50px;
+  text-decoration: none;
+}
+
+.nav-links a h2 {
+  color: #cddec6;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo img {
+  width: 150px;
+  padding-left: 50px;
+  margin: 0;
+}
+
+/* Content Container */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 50px;
+  padding-bottom: 140px;
+}
+
+/* Contact Write up Section */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 50px;
+}
+
+.title h1 {
+  color: #cddec6;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.title p {
+  color: #778b6f;
+  font-weight: 800;
+}
+
+/* Resources */
+
+.resources-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.resource-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.resource-links-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.resource-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.resource-spacer {
+  padding: 25px;
+}
+
+.resources-section h2 {
+  color: #cddec6;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.resource-links a {
+  color: #778b6f;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.resource-links p {
+  color: #778b6f;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+/* Form */
+
+.form-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 50%;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #cddec6;
+}
+
+textarea {
+  height: 150px;
+  width: 400px;
+  border-radius: 15px;
+  background-color: #cddec6;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #131713;
+  background-color: #cddec6;
+  border: none;
+  border-radius: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+label {
+  color: #778b6f;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+/* Footer */
+
+#contact {
+  background-color: #778b6f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.footer-quote {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-quote h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #273027;
+  text-align: center;
+}
+
+.footer-quote h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #334033;
+}
+
+.footer-contact-info {
+  width: 30%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.footer-contact-info h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #273027;
+}
+
+.footer-contact-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #334033;
+}
+
+.footer-contact-info a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #334033;
+  padding-bottom: 15px;
+}
+
+.footer-contact-info button {
+  border: solid #334033 3px;
+  background-color: #778b6f;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.footer-contact-info .contact-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-contact-info img {
+  width: 200px;
 }
